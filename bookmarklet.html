@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookmarklet</title>
+</head>
+<body>
+	<h1>Bookmarlet</h1>
+	<p>This is a <a href="javascript:(function() {
+	let script = document.createElement('script'); let url = 'http://localhost:8080/'; script.src = url + '?' + new Date().getTime(); document.body.appendChild(script);
+})();">bookmarklet</a></p>
+</body>
+</html>
+
+
+

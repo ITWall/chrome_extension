@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "My First Extension",
+	"version": "1.0",
+	"web_accessible_resources": [
+		"kittens/*.jpg"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["content.js"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_icon": "rd.png",
+		"default_popup": "popup.html",
+		"default_title": "Title will come here"
+	}
+}
