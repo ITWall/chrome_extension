@@ -3,7 +3,8 @@
 	"name": "My First Extension",
 	"version": "1.0",
 	"web_accessible_resources": [
-		"kittens/*.jpg"
+		"kittens/*.jpg",
+		"audio/*.mp3"
 	],
 	"content_scripts": [
 		{
@@ -20,5 +21,8 @@
 		"default_icon": "rd.png",
 		"default_popup": "popup.html",
 		"default_title": "Title will come here"
-	}
+	},
+	"permissions": [
+		"downloads", "tabs"
+	]
 }
